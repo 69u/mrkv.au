@@ -13,7 +13,7 @@ import dayjs from '@/utils/dayjs';
 function LastUpdate() {
   return (
     <a
-      href="https://github.com/enjidev/enji.dev"
+      href="https://github.com/69u"
       target="_blank"
       rel="noreferrer nofollow"
       className={clsx('hover:underline')}
@@ -112,13 +112,13 @@ function FooterDescription() {
         About Me
       </div>
       <p className={clsx('mb-4 font-normal leading-relaxed')}>
-        I&apos;m Enji, a <strong>front-end developer</strong> who loves
-        intuitive, clean and modern UI design.
+        I&apos;m Kyle, a <strong>full-stack developer</strong> who loves
+        intuitive, clean and modern UI technology.
       </p>
       <ul className={clsx('-ml-2 flex gap-1')}>
         <li>
           <a
-            href="https://twitter.com/enjidev"
+            href="https://twitter.com/kyle_varley"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -130,7 +130,7 @@ function FooterDescription() {
         </li>
         <li>
           <a
-            href="https://github.com/enjidev"
+            href="https://github.com/69u"
             target="_blank"
             rel="noreferrer nofollow"
             className={clsx('flex h-9 w-9 items-center justify-center')}
@@ -138,18 +138,6 @@ function FooterDescription() {
             title="My GitHub profile"
           >
             <GitHubIcon className={clsx('h-5 w-5')} />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://figma.com/@enjidev"
-            target="_blank"
-            rel="noreferrer nofollow"
-            className={clsx('flex h-9 w-9 items-center justify-center')}
-            aria-label="My Figma profile"
-            title="My Figma profile"
-          >
-            <FigmaIcon className={clsx('h-5 w-5')} />
           </a>
         </li>
       </ul>
@@ -206,11 +194,11 @@ function Footer() {
                       title: 'Personal Blog',
                       href: '/blog',
                     },
-                    {
+                    /*{
                       title: 'T.I.L',
                       href: '/today-i-learned',
                       label: 'new',
-                    },
+                    },*/
                   ]}
                 />
               </div>
@@ -219,19 +207,19 @@ function Footer() {
                   title="This Site"
                   links={[
                     {
-                      title: 'Design Concept',
-                      href: 'https://www.figma.com/community/file/1176392613303840973',
+                      title: 'Photography',
+                      href: 'https://flic.kr/ps/3VhVpy',
                       isInternal: false,
                     },
                     {
                       title: 'Source Code',
-                      href: 'https://github.com/enjidev/enji.dev',
+                      href: 'https://github.com/69u/mrkv.au',
                       isInternal: false,
                     },
                     {
                       title: 'Credits',
                       href: '/credits',
-                      label: 'new',
+                      //label: 'new',
                     },
                   ]}
                 />
@@ -246,7 +234,7 @@ function Footer() {
           )}
         >
           <div className={clsx('font-semibold')}>
-            &copy; {dayjs().format('YYYY')}, Enji Kusnadi
+            &copy; {dayjs().format('YYYY')}, Kyle Varley
           </div>
           <div className={clsx('text-slate-500', 'dark:text-slate-400')}>
             <LastUpdate />

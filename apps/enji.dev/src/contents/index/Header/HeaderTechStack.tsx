@@ -3,11 +3,11 @@ import { m } from 'framer-motion';
 
 import {
   FigmaIcon,
-  FramerMotionIcon,
-  NextJsIcon,
-  ReactIcon,
+  LaravelIcon,
+  NuxtJSIcon,
+  VueIcon,
   TailwindCssIcon,
-  TypeScriptIcon,
+  JavaScriptIcon,
   VSCodeIcon,
 } from '@/components/Icons';
 
@@ -41,12 +41,12 @@ function HeaderTechStack() {
       >
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
-            <TypeScriptIcon className={clsx('h-6 w-6')} />
+            <JavaScriptIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#61DAFB]')}>
-            <ReactIcon className={clsx('h-6 w-6')} />
+            <VueIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
@@ -56,7 +56,7 @@ function HeaderTechStack() {
         </m.li>
         <m.li variants={animation}>
           <div className={clsx('transition duration-200 hover:text-[#0055FF]')}>
-            <FramerMotionIcon className={clsx('h-6 w-6')} />
+            <LaravelIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
@@ -65,7 +65,7 @@ function HeaderTechStack() {
               'transition duration-200 hover:text-[#000000] dark:hover:text-[#FFFFFF]'
             )}
           >
-            <NextJsIcon className={clsx('h-6 w-6')} />
+            <NuxtJSIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>

@@ -15,12 +15,12 @@ function ProjectsContents() {
   return (
     <>
       <SectionTitle
-        title="The dynamic accent colors."
-        caption="tailwindcss-accent"
-        description="Add accent colors for dynamic, flexible color use in your Tailwind CSS project."
+        title="VATSAT"
+        caption="My Work"
+        description="just a side project - Virtual Air Traffic Statistics and Tracking is what VATSAT stands for and is currently only just a performant tracker."
         button={{
           title: 'learn more',
-          href: '/docs/tailwindcss-accent',
+          href: 'https://vatsat.pages.dev',
         }}
       />
       <SectionContent>
@@ -34,13 +34,13 @@ function ProjectsContents() {
                 active={currentState === 'github'}
                 onClick={() => setCurrentState('github')}
               />
-              <SectionButton
+              {/*<SectionButton
                 title="npm package"
                 icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
                 description="Install and use the package with ease thanks to its typed options."
                 active={currentState === 'npm'}
                 onClick={() => setCurrentState('npm')}
-              />
+          />*/}
             </div>
           </div>
           <div className={clsx('w-full', 'lg:w-auto')}>
@@ -51,22 +51,22 @@ function ProjectsContents() {
                   browserTabs={[
                     {
                       icon: <GitHubIcon className="h-4 w-4" />,
-                      title: 'enjidev/tailwindcss-accent - GitHub',
+                      title: 'Concept-Collective/cc-chat - GitHub',
                       isActive: currentState === 'github',
                     },
-                    {
+                    /*{
                       icon: <NpmIcon className="h-4 w-4" />,
                       title: 'tailwindcss-accent - npm',
                       isActive: currentState === 'npm',
-                    },
+                    },*/
                   ]}
                 >
                   {currentState === 'github' && (
                     <GitHubWireframe
-                      author="enjidev"
+                      author="Concept-Collective"
                       license="MIT"
-                      repository="tailwindcss-accent"
-                      description="Adds accent colors for more dynamic and flexible color utilization."
+                      repository="cc-chat"
+                      description="Adds a chat theme for FiveM & RedM."
                     />
                   )}
                   {currentState === 'npm' && (
