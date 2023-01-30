@@ -2,9 +2,9 @@
   <h1>
     Kyle Varley
     &middot;
-    <img src="https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fwww.enji.dev"/>
-    <img src="https://img.shields.io/github/deployments/enjidev/enji.dev/production?label=production&style=flat-square"/>
-    <img src="https://img.shields.io/github/commit-activity/m/enjidev/enji.dev?style=flat-square"/>
+    <img src="https://img.shields.io/website?style=flat-square&url=https%3A%2F%2Fwww.mrkv.au"/>
+    <img src="https://img.shields.io/github/deployments/69u/mrkv.au/production?label=production&style=flat-square"/>
+    <img src="https://img.shields.io/github/commit-activity/m/69u/mrkv.au?style=flat-square"/>
   </h1>
 </div>
 
