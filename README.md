@@ -8,7 +8,7 @@
   </h1>
 </div>
 
-A monorepo for my personal website and projects, built with Turborepo and pnpm.
+my personal ePortfolio, credits to [enjidev](https://github.com/enjidev/enji.dev)
 
 ## 📘 [mrkv.au](https://www.mrkv.au)
 
