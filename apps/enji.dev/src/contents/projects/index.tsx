@@ -34,13 +34,13 @@ function ProjectsContents() {
                 active={currentState === 'github'}
                 onClick={() => setCurrentState('github')}
               />
-              {/*<SectionButton
+              {/**  <SectionButton
                 title="npm package"
                 icon={<NpmIcon className={clsx('my-2 h-16 w-16')} />}
                 description="Install and use the package with ease thanks to its typed options."
                 active={currentState === 'npm'}
                 onClick={() => setCurrentState('npm')}
-          />*/}
+               />    */}
             </div>
           </div>
           <div className={clsx('w-full', 'lg:w-auto')}>
@@ -54,11 +54,11 @@ function ProjectsContents() {
                       title: 'Concept-Collective/cc-chat - GitHub',
                       isActive: currentState === 'github',
                     },
-                    /*{
+                    /** {
                       icon: <NpmIcon className="h-4 w-4" />,
                       title: 'tailwindcss-accent - npm',
                       isActive: currentState === 'npm',
-                    },*/
+                    },  */
                   ]}
                 >
                   {currentState === 'github' && (
