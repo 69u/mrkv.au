@@ -91,7 +91,7 @@ function HeaderTitle() {
               'dark:text-slate-300'
             )}
           >
-            Full-Stack Developer
+            Part-time Student
           </strong>{' '}
           who loves intuitive,{' '}
           <span className={clsx('block')}>clean and modern technology.</span>
