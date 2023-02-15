@@ -68,7 +68,7 @@ function AvailableForHire() {
           )}
         />
       </span>
-      AVAILABLE FOR HIRE
+      AVAILABLE FOR ENQUIRIES
     </div>
   );
 }
