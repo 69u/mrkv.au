@@ -64,7 +64,7 @@ function ProjectsContents() {
                   {currentState === 'github' && (
                     <GitHubWireframe
                       author="Concept-Collective"
-                      license="GNU GPL v3.0"
+                      license="GPL-3.0"
                       repository="cc-chat"
                       description="Adds a chat theme for FiveM & RedM."
                     />
@@ -72,7 +72,7 @@ function ProjectsContents() {
                   {currentState === 'npm' && (
                     <GitHubWireframe
                       author="VATSAT"
-                      license="GNU GPL v3.0"
+                      license="GPL-3.0"
                       repository="welcome"
                       description="Making tracking statistics and aircraft over multiple FSD-Networks easily accomplishable in one place."
                     />
