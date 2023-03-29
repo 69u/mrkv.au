@@ -47,7 +47,7 @@ function HeaderImage() {
               }}
             />
           </m.div>
-          <m.div
+        <m.div
             className={clsx('')}
             initial={{ opacity: 0 }}
             animate={controlsHeaderImage}
