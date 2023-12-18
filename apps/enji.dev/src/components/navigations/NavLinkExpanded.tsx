@@ -1,6 +1,7 @@
 import clsx from 'clsx';
+import { AnimatePresence,m } from 'framer-motion';
 import React from 'react';
-import { m, AnimatePresence } from 'framer-motion';
+
 import { ChevronRightIcon } from '@/components/Icons';
 import NavLink from '@/components/navigations/NavLink';
 
@@ -15,7 +16,7 @@ interface NavLinkExpandedProps {
 
 function NavLinkExpanded({ title, items, isOpen, onClick }: NavLinkExpandedProps) {
   return (
-    <div className={clsx('flex')} onClick={onClick}>
+    <div className={clsx('flex')} onClick={onClick} onKeyDown={onClick} role="button" tabIndex={0}>
       <div
         className={clsx(
           'nav-link nav-link--label pointer-events-none ml-2 mr-2'

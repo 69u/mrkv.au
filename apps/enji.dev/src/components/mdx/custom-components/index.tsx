@@ -2,8 +2,8 @@ import { H2, H3 } from './Heading';
 import { Hr } from './Hr';
 import { Link } from './Link';
 import { Pre } from './Pre';
-import { Table } from './Table';
 import Slideshow from './Slideshow';
+import { Table } from './Table';
 
 import type { MDXComponents } from 'mdx/types';
 

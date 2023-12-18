@@ -1,6 +1,6 @@
 import clsx from 'clsx';
-import {useState, useEffect} from 'react';
 import { useRouter } from 'next/router';
+import {useEffect,useState} from 'react';
 
 import { GitHubIcon, TwitterIcon } from '@/components/Icons';
 import NavIcon from '@/components/navigations/NavIcon';
@@ -29,9 +29,9 @@ function Navbar() {
   const [openTab, setOpenTab] = useState(() => {
     if (router.pathname.startsWith('/photography')) {
       return 'Photography';
-    } else {
+    } 
       return 'Work';
-    }
+    
   });
   useEffect(() => {
     if (router.pathname.startsWith('/photography')) {

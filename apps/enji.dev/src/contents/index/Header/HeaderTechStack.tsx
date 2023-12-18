@@ -2,13 +2,13 @@ import clsx from 'clsx';
 import { m } from 'framer-motion';
 
 import {
-  NodeJSIcon,
-  LaravelIcon,
-  NuxtJSIcon,
-  VueIcon,
-  TailwindCssIcon,
   JavaScriptIcon,
+  LaravelIcon,
+  NodeJSIcon,
+  NuxtJSIcon,
+  TailwindCssIcon,
   VSCodeIcon,
+  VueIcon,
 } from '@/components/Icons';
 
 const animation = {
