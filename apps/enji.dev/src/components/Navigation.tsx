@@ -1,4 +1,6 @@
 import clsx from 'clsx';
+import {useState, useEffect} from 'react';
+import { useRouter } from 'next/router';
 
 import { GitHubIcon, TwitterIcon } from '@/components/Icons';
 import NavIcon from '@/components/navigations/NavIcon';
@@ -10,6 +12,10 @@ import NavLogo from '@/components/navigations/NavLogo';
 
 import useOnScroll from '@/hooks/useOnScroll';
 
+const photographyLinks = [
+  { title: 'Home', href: '/photography/home' },
+]
+
 const workLinks = [
   { title: 'Skills & Tools', href: '/work/skills-and-tools' },
   { title: 'Experience', href: '/work/experience' },
@@ -18,8 +24,22 @@ const workLinks = [
 ];
 
 function Navbar() {
+  const router = useRouter();
   const isScrolled = useOnScroll(0);
-
+  const [openTab, setOpenTab] = useState(() => {
+    if (router.pathname.startsWith('/photography')) {
+      return 'Photography';
+    } else {
+      return 'Work';
+    }
+  });
+  useEffect(() => {
+    if (router.pathname.startsWith('/photography')) {
+      setOpenTab('Photography');
+    } else {
+      setOpenTab('Work');
+    }
+  }, [router.pathname]);
   return (
     <header
       className={clsx('fixed top-0 right-0 left-0 z-[1000]', 'fm:absolute')}
@@ -58,10 +78,13 @@ function Navbar() {
                 <NavLink title="T.I.L" href="/today-i-learned" />
               </li>   */}
               <li className={clsx('lg:hidden')} data-accent="blue">
-                <NavLinkDropdown title="Work" items={workLinks} />
+                <NavLinkDropdown title="Work" items={workLinks}  />
               </li>
               <li className={clsx('hidden lg:block')} data-accent="blue">
-                <NavLinkExpanded title="Work" items={workLinks} />
+                <NavLinkExpanded title="Work" items={workLinks} isOpen={openTab === 'Work'} onClick={() => setOpenTab('Work')}  />
+              </li>
+              <li className={clsx('hidden lg:block')} data-accent="blue">
+                <NavLinkExpanded title="Photography" items={photographyLinks} isOpen={openTab === 'Photography'} onClick={() => setOpenTab('Photography')} />
               </li>
             </ul>
           </nav>

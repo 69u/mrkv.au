@@ -3,6 +3,7 @@ import { Hr } from './Hr';
 import { Link } from './Link';
 import { Pre } from './Pre';
 import { Table } from './Table';
+import Slideshow from './Slideshow';
 
 import type { MDXComponents } from 'mdx/types';
 
@@ -13,6 +14,7 @@ const components: MDXComponents = {
   hr: Hr,
   pre: Pre,
   table: Table,
+  Slideshow
 };
 
 export default components;

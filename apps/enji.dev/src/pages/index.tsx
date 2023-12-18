@@ -8,7 +8,7 @@ function Index() {
   return (
     <>
       <Head
-        title="Kyle Varley · Part-Time Student"
+        title="Kyle Varley · ePortfolio · Home"
         description="An online portfolio featuring a showcase of my projects and some thoughts as an aspiring Full-Stack Developer who loves intuitive, clean and modern technology."
         ogImage={`${getBaseUrl()}/assets/images/og-image.png`}
         overrideTitle
