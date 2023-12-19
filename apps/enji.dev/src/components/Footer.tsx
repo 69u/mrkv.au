@@ -184,33 +184,8 @@ function Footer() {
                   ]}
                 />
                 <FooterGroup
-                  title="Learn"
-                  links={[
-                    {
-                      title: "Docs",
-                      href: "/docs",
-                    },
-                    {
-                      title: "Personal Blog",
-                      href: "/blog",
-                    },
-                    /**   {
-                      title: 'T.I.L',
-                      href: '/today-i-learned',
-                      label: 'new',
-                    },    */
-                  ]}
-                />
-              </div>
-              <div className={clsx("flex", "sm:gap-16")}>
-                <FooterGroup
                   title="This Site"
                   links={[
-                    {
-                      title: "Photography",
-                      href: "https://flic.kr/ps/3VhVpy",
-                      isInternal: false,
-                    },
                     {
                       title: "Source Code",
                       href: "https://github.com/69u/mrkv.au",
@@ -220,6 +195,37 @@ function Footer() {
                       title: "Credits",
                       href: "/credits",
                     },
+                  ]}
+                />
+                <FooterGroup
+                  title="Photography"
+                  links={[
+                    {
+                      title: "Home",
+                      href: "/photography/home",
+                      label: "new",
+                    },
+                  ]}
+                />
+              </div>
+              <div className={clsx("flex", "sm:gap-16")}>
+              <FooterGroup
+                  title="More"
+                  links={[
+                    {
+                      title: "Flickr",
+                      href: "https://flic.kr/ps/3VhVpy",
+                      isInternal: false,
+                    },
+                    /** {
+                      title: "Personal Blog",
+                      href: "/blog",
+                    },
+                       {
+                      title: 'T.I.L',
+                      href: '/today-i-learned',
+                      label: 'new',
+                    },    */
                   ]}
                 />
               </div>

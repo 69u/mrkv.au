@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.mrkv.au',
+  siteUrl: 'https://www.kyle.varley.au',
   priority: 0.6,
   generateRobotsTxt: true,
   generateIndexSitemap: false,
@@ -18,18 +18,22 @@ module.exports = {
     }
 
     if (path === '/blog') {
-      return defaultValue(0.9);
+      return defaultValue(0.1);
     }
 
     if (path === '/projects') {
-      return defaultValue(0.9);
+      return defaultValue(0.5);
     }
 
     if (path === '/today-i-learned') {
-      return defaultValue(0.9);
+      return defaultValue(0.1);
     }
 
     if (path.indexOf('/work') === 0) {
+      return defaultValue(0.8);
+    }
+
+    if (path.indexOf('/photography') === 0) {
       return defaultValue(0.8);
     }
 

@@ -14,6 +14,7 @@ import useOnScroll from '@/hooks/useOnScroll';
 
 const photographyLinks = [
   { title: 'Home', href: '/photography/home' },
+  { title: 'Contact', href: '/photography/contact' },
 ]
 
 const workLinks = [
