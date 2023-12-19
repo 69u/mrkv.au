@@ -3,7 +3,7 @@ module.exports = {
   siteUrl: 'https://www.kyle.varley.au',
   priority: 0.6,
   generateRobotsTxt: true,
-  generateIndexSitemap: false,
+  generateIndexSitemap: true,
   transform: async (config, path) => {
     const defaultValue = (priority) => ({
       loc: path,
