@@ -2,7 +2,7 @@ import clsx from 'clsx';
 
 import { CalendarIcon } from '@/components/Icons';
 
-export type TodoItemState = 'spacing' | 'typography' | 'colors' | 'effects';
+export type TodoItemState = 'spacing' | 'typography' | 'colors' | 'effects' | 'responsiveness' | 'accessibility';
 
 interface TodoItemProps {
   state: Array<TodoItemState>;
@@ -34,7 +34,9 @@ function TodoItem({
               'border-divider-light bg-white',
               'dark:border-divider-dark dark:bg-slate-900',
             ]
-          : ['border-black bg-white', 'dark:border-white dark:bg-[#050914]']
+          : ['border-black bg-white', 'dark:border-white dark:bg-[#050914]'],
+          state.includes('responsiveness') && ['md:flex md:flex-col md:gap-4'],
+          state.includes('accessibility') && ['text-lg']
       )}
       role="presentation"
     >
@@ -45,38 +47,42 @@ function TodoItem({
         )}
       >
         <div className={clsx('flex')}>
-          <div
-            className={clsx(
-              'relative flex h-8 w-8 items-center justify-center',
-              state.includes('effects') && ['rounded-full'],
-              state.includes('spacing') && [''],
-              state.includes('typography') && ['font-bold'],
-              state.includes('colors')
-                ? ['border-white bg-sky-400 text-white']
-                : [
-                    'border-white bg-[#050914] text-white',
-                    'dark:bg-white dark:text-black',
-                  ]
-            )}
-          >
-            E
-          </div>
-        </div>
         <div
           className={clsx(
+            'relative flex h-8 w-8 items-center justify-center',
             state.includes('effects') && ['rounded-full'],
-            state.includes('spacing') && ['px-2 py-0.5'],
-            state.includes('typography') && ['text-xs font-bold'],
+            state.includes('spacing') && ['mr-2'],
+            state.includes('typography') && ['font-bold'],
             state.includes('colors')
-              ? [
-                  'bg-red-100 text-red-800',
-                  'dark:bg-red-500/20 dark:text-red-300',
-                ]
-              : ['bg-[#ff0000] text-white']
+              ? ['border-white bg-sky-400 text-white']
+              : [
+                  'border-white bg-[#050914] text-white',
+                  'dark:bg-white dark:text-black',
+                ],
+            state.includes('responsiveness') && ['md:h-10 md:w-10'],
+            state.includes('accessibility') && ['text-lg']
           )}
         >
-          High
+          KV
         </div>
+        </div>
+        <div
+        className={clsx(
+          state.includes('effects') && ['rounded-full'],
+          state.includes('spacing') && ['px-2 py-0.5'],
+          state.includes('typography') && ['text-xs font-bold'],
+          state.includes('colors')
+            ? [
+                'bg-red-100 text-red-800',
+                'dark:bg-red-500/20 dark:text-red-300',
+              ]
+            : ['bg-[#ff0000] text-white'],
+          state.includes('responsiveness') && ['md:text-base'],
+          state.includes('accessibility') && ['text-lg']
+        )}
+      >
+        High
+      </div>
       </div>
       <div
         className={clsx(
@@ -140,35 +146,40 @@ function TodoItem({
         </div>
       </div>
       <div
+      className={clsx(
+        'flex items-center',
+        state.includes('spacing') && ['gap-1'],
+        state.includes('typography') && ['text-xs font-medium'],
+        state.includes('colors') && [''],
+        state.includes('accessibility') && ['text-lg']
+      )}
+    >
+      <CalendarIcon
         className={clsx(
-          'flex items-center',
-          state.includes('spacing') && ['gap-1 '],
-          state.includes('typography') && ['text-xs font-medium'],
-          state.includes('colors') && ['']
+          'h-4 w-4',
+          state.includes('spacing') && ['-mt-1'],
+          state.includes('typography') && [''],
+          state.includes('colors')
+            ? ['text-slate-400', 'dark:text-slate-600']
+            : ['h-4 w-4 text-black', 'dark:text-white'],
+          state.includes('responsiveness') && ['md:h-6 md:w-6'],
+          state.includes('accessibility') && ['md:h-8 md:w-8']
+        )}
+      />
+      <div
+        className={clsx(
+          state.includes('spacing') && [''],
+          state.includes('typography') && [''],
+          state.includes('colors')
+            ? ['text-slate-600', 'dark:text-slate-400']
+            : ['text-black', 'dark:text-white'],
+          state.includes('responsiveness') && ['md:text-base'],
+          state.includes('accessibility') && ['text-lg']
         )}
       >
-        <CalendarIcon
-          className={clsx(
-            'h-4 w-4',
-            state.includes('spacing') && ['-mt-1'],
-            state.includes('typography') && [''],
-            state.includes('colors')
-              ? ['text-slate-400', 'dark:text-slate-600']
-              : ['h-4 w-4 text-black', 'dark:text-white']
-          )}
-        />
-        <div
-          className={clsx(
-            state.includes('spacing') && [''],
-            state.includes('typography') && [''],
-            state.includes('colors')
-              ? ['text-slate-600', 'dark:text-slate-400']
-              : ['text-black', 'dark:text-white']
-          )}
-        >
-          {date}
-        </div>
+        {date}
       </div>
+    </div>
     </div>
   );
 }

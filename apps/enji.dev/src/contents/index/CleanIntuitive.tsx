@@ -21,25 +21,37 @@ const content: Array<Content> = [
     state: 'typography',
     shows: ['typography'],
     title: 'Typography',
-    description: 'Selecting the font type, font size, and font weight.',
+    description: 'Choose a font that is easy to read across different devices and sizes.',
   },
   {
     state: 'spacing',
     shows: ['typography', 'spacing'],
     title: 'Spacing',
-    description: 'Positioning and adding spacing between elements.',
+    description: 'Ensure that there is enough space between elements to make them easy to distinguish.',
   },
   {
     state: 'colors',
     shows: ['typography', 'spacing', 'colors'],
     title: 'Colors',
-    description: 'Choosing a color scheme with sufficient contrast.',
+    description: 'Choose a color scheme that is visually appealing and aligns with your brand.',
   },
   {
     state: 'effects',
     shows: ['typography', 'spacing', 'colors', 'effects'],
     title: 'Effects',
-    description: 'Add effects like borders, shadows, rounded corners, etc.',
+    description: 'Use effects like shadows and transitions to enhance the user experience.',
+  },
+  {
+    state: 'responsiveness',
+    shows: ['typography', 'spacing', 'colors', 'effects', 'responsiveness'],
+    title: 'Responsiveness',
+    description: 'Ensure that your design looks good on all screen sizes.',
+  },
+  {
+    state: 'accessibility',
+    shows: ['typography', 'spacing', 'colors', 'effects', 'responsiveness', 'accessibility'],
+    title: 'Accessibility',
+    description: 'Make sure your design is accessible to all users, including those with disabilities.',
   },
 ];
 
@@ -83,7 +95,7 @@ function CleanIntuitive() {
                   state={
                     currentState
                       ? currentState.shows
-                      : ['typography', 'spacing', 'colors', 'effects']
+                      : ['typography', 'spacing', 'colors', 'effects', 'responsiveness', 'accessibility']
                   }
                 />
               </div>
@@ -92,7 +104,7 @@ function CleanIntuitive() {
                   state={
                     currentState
                       ? currentState.shows
-                      : ['typography', 'spacing', 'colors', 'effects']
+                      : ['typography', 'spacing', 'colors', 'effects', 'responsiveness', 'accessibility']
                   }
                   title="UI Implementation"
                   description="Start creating UI components using React and Tailwind CSS."

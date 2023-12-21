@@ -40,12 +40,12 @@ function HeaderTechStack() {
         transition={{ delayChildren: 0.6, staggerChildren: 0.025 }}
       >
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#3178C6]')}>
+          <div className={clsx('transition duration-200 hover:text-[#F7DF1E]')}>
             <JavaScriptIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#61DAFB]')}>
+          <div className={clsx('transition duration-200 hover:text-[#42b883]')}>
             <VueIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
@@ -55,14 +55,14 @@ function HeaderTechStack() {
           </div>
         </m.li>
         <m.li variants={animation}>
-          <div className={clsx('transition duration-200 hover:text-[#0055FF]')}>
+          <div className={clsx('transition duration-200 hover:text-[#ff2d20]')}>
             <LaravelIcon className={clsx('h-6 w-6')} />
           </div>
         </m.li>
         <m.li variants={animation}>
           <div
             className={clsx(
-              'transition duration-200 hover:text-[#000000] dark:hover:text-[#FFFFFF]'
+              'transition duration-200 hover:text-[#00DC82]'
             )}
           >
             <NuxtJSIcon className={clsx('h-6 w-6')} />
