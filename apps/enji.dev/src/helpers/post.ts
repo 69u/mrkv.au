@@ -96,7 +96,7 @@ export const getPostStructuredData = ({
         '@type': 'Person',
         name: 'Kyle Varley',
         jobTitle: 'Full-Stack Developer',
-        url: 'https://www.mrkv.au/about',
+        url: 'https://www.kyle.varley.au/about',
       },
     ],
   });

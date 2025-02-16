@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://www.kyle.varley.au',
+  siteUrl: 'https://kyle.varley.au',
   priority: 0.6,
   generateRobotsTxt: true,
   generateIndexSitemap: true,
